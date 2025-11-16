@@ -13,7 +13,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="737.0" prefWidth="1284.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane maxHeight="1.7976931348623157E308" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1284.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1">
     <top>
         <VBox alignment="CENTER" prefHeight="93.0" prefWidth="1284.0" BorderPane.alignment="CENTER">
             <children>
@@ -31,10 +31,10 @@
         </VBox>
     </top>
    <center>
-      <ScrollPane fitToWidth="true" pannable="true" prefHeight="576.0" prefWidth="1284.0" BorderPane.alignment="CENTER">
+      <ScrollPane fitToWidth="true" pannable="true" prefHeight="542.0" prefWidth="1260.0" BorderPane.alignment="CENTER">
          <content>
 <!--             <VBox prefHeight="385.0" prefWidth="271.0" >-->
-                 <GridPane hgap="5.0" prefHeight="563.0" prefWidth="1281.0" vgap="10.0" BorderPane.alignment="CENTER">
+                 <GridPane hgap="5.0" prefHeight="669.0" prefWidth="1281.0" vgap="10.0" BorderPane.alignment="CENTER">
                      <columnConstraints>
                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="411.9999186197917" minWidth="0.0" prefWidth="354.00006103515625" />
                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="874.6666666666667" minWidth="0.0" prefWidth="846.6666056315105" />
@@ -44,10 +44,10 @@
                          <RowConstraints maxHeight="71.66665649414062" minHeight="10.0" prefHeight="46.00001017252603" vgrow="SOMETIMES" />
                          <RowConstraints maxHeight="87.66663360595703" minHeight="10.0" prefHeight="43.666625976562486" vgrow="SOMETIMES" />
                          <RowConstraints maxHeight="175.6666717529297" minHeight="10.0" prefHeight="45.00004069010416" vgrow="SOMETIMES" />
-                         <RowConstraints maxHeight="183.6666717529297" minHeight="10.0" prefHeight="120.99999999999997" vgrow="SOMETIMES" />
-                         <RowConstraints maxHeight="189.66663106282556" minHeight="0.0" prefHeight="49.666666666666686" vgrow="SOMETIMES" />
-                         <RowConstraints maxHeight="228.33337402343753" minHeight="0.0" prefHeight="50.33336893717444" vgrow="SOMETIMES" />
-                         <RowConstraints maxHeight="255.66666666666669" minHeight="10.0" prefHeight="65.6666259765625" vgrow="SOMETIMES" />
+                         <RowConstraints maxHeight="183.6666717529297" minHeight="10.0" prefHeight="152.33331298828122" vgrow="SOMETIMES" />
+                         <RowConstraints maxHeight="189.66663106282556" minHeight="0.0" prefHeight="49.66668701171875" vgrow="SOMETIMES" />
+                         <RowConstraints maxHeight="228.33337402343753" minHeight="0.0" prefHeight="102.66668701171875" vgrow="SOMETIMES" />
+                         <RowConstraints maxHeight="255.66666666666669" minHeight="10.0" prefHeight="58.33335367838538" vgrow="SOMETIMES" />
                      </rowConstraints>
                      <children>
                          <Label prefHeight="169.0" prefWidth="542.0" text="Full Name">
@@ -73,7 +73,7 @@
                                  <Insets top="1.0" />
                              </opaqueInsets>
                          </TextField>
-                         <TextField prefHeight="184.0" prefWidth="875.0" style="-fx-border-width: 1 1 1 1; -fx-border-color: #000000; -fx-border-radius: 4;" GridPane.columnIndex="1" GridPane.rowIndex="7">
+                         <TextField prefHeight="53.0" prefWidth="854.0" style="-fx-border-width: 1 1 1 1; -fx-border-color: #000000; -fx-border-radius: 4;" GridPane.columnIndex="1" GridPane.rowIndex="7">
                              <opaqueInsets>
                                  <Insets top="1.0" />
                              </opaqueInsets>
@@ -111,39 +111,39 @@
                      <children>
                         <HBox prefHeight="100.0" prefWidth="200.0">
                            <children>
-                              <Label prefHeight="35.0" prefWidth="231.0" text="Examination / Degree :">
+                              <Label prefHeight="79.0" prefWidth="231.0" text="Examination / Degree :">
                                  <font>
                                     <Font size="21.0" />
                                  </font>
                               </Label>
-                              <TextField prefHeight="35.0" prefWidth="637.0" style="-fx-border-radius: 5; -fx-border-width: 1; -fx-border-color: black;" />
+                              <TextField prefHeight="83.0" prefWidth="647.0" style="-fx-border-radius: 5; -fx-border-width: 1; -fx-border-color: black;" />
                            </children>
                         </HBox>
                         <HBox prefHeight="100.0" prefWidth="200.0">
                            <children>
-                              <Label prefHeight="37.0" prefWidth="195.0" text="Institute :">
+                              <Label prefHeight="75.0" prefWidth="201.0" text="Institute :">
                                  <font>
                                     <Font size="22.0" />
                                  </font>
                               </Label>
-                              <TextField prefHeight="35.0" prefWidth="832.0" style="-fx-border-radius: 5; -fx-border-width: 1; -fx-border-color: black;" />
+                              <TextField prefHeight="47.0" prefWidth="845.0" style="-fx-border-radius: 5; -fx-border-width: 1; -fx-border-color: black;" />
                            </children>
                         </HBox>
                         <HBox prefHeight="100.0" prefWidth="200.0" spacing="10.0">
                            <children>
                               <HBox prefHeight="39.0" prefWidth="448.0" spacing="5.0">
                                  <children>
-                                    <Label prefHeight="39.0" prefWidth="137.0" text="Passing Year :">
+                                    <Label prefHeight="51.0" prefWidth="139.0" text="Passing Year :">
                                        <font>
                                           <Font size="20.0" />
                                        </font>
                                     </Label>
-                                    <TextField prefHeight="35.0" prefWidth="265.0" style="-fx-border-radius: 5; -fx-border-width: 1; -fx-border-color: black;" />
+                                    <TextField prefHeight="86.0" prefWidth="304.0" style="-fx-border-radius: 5; -fx-border-width: 1; -fx-border-color: black;" />
                                  </children>
                               </HBox>
                               <HBox prefHeight="39.0" prefWidth="448.0">
                                  <children>
-                                    <Label prefHeight="35.0" prefWidth="154.0" text="GPA / CGPA :">
+                                    <Label prefHeight="66.0" prefWidth="169.0" text="GPA / CGPA :">
                                        <font>
                                           <Font size="20.0" />
                                        </font>
@@ -172,6 +172,44 @@
                         <TextField prefHeight="72.0" prefWidth="675.0" style="-fx-border-color: black; -fx-border-radius: 5; -fx-border-width: 1;" />
                      </children>
                   </GridPane>
+                  <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="6">
+                     <children>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Label prefHeight="79.0" prefWidth="231.0" text="Company : ">
+                                 <font>
+                                    <Font size="21.0" />
+                                 </font>
+                              </Label>
+                              <TextField prefHeight="43.0" prefWidth="851.0" style="-fx-border-radius: 5; -fx-border-width: 1; -fx-border-color: black;" />
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+                           <children>
+                              <HBox prefHeight="39.0" prefWidth="448.0" spacing="5.0">
+                                 <children>
+                                    <Label prefHeight="51.0" prefWidth="139.0" text="Position :">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField prefHeight="55.0" prefWidth="335.0" style="-fx-border-radius: 5; -fx-border-width: 1; -fx-border-color: black;" />
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="39.0" prefWidth="448.0">
+                                 <children>
+                                    <Label prefHeight="66.0" prefWidth="169.0" text="Duration : ">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField prefHeight="52.0" prefWidth="385.0" style="-fx-border-radius: 5; -fx-border-width: 1; -fx-border-color: black;" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
 
                      </children>
                      <BorderPane.margin>
@@ -188,4 +226,28 @@
          </BorderPane.margin>
       </ScrollPane>
    </center>
+   <bottom>
+      <HBox alignment="CENTER" prefHeight="67.0" prefWidth="1284.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER_RIGHT" prefHeight="81.0" prefWidth="1129.0">
+               <children>
+                  <Button mnemonicParsing="false" prefHeight="53.0" prefWidth="229.0" style="-fx-font-size: 23;" text="Submit">
+                     <font>
+                        <Font size="28.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_RIGHT" prefHeight="81.0" prefWidth="895.0">
+               <children>
+                  <Button mnemonicParsing="false" prefHeight="55.0" prefWidth="185.0" style="-fx-font-size: 23;" text="Preview">
+                     <HBox.margin>
+                        <Insets right="45.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+   </bottom>
 </BorderPane>
