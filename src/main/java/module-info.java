@@ -9,6 +9,7 @@ module com.example.learning {
     requires org.kordamp.ikonli.javafx;
     requires org.kordamp.bootstrapfx.core;
     requires eu.hansolo.tilesfx;
+    requires javafx.graphics;
 
     opens com.example.learning to javafx.fxml;
     exports com.example.learning;
