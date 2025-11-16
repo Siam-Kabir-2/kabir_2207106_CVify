@@ -130,24 +130,29 @@
                                 </HBox>
                                 <HBox prefHeight="100.0" prefWidth="200.0" spacing="10.0">
                                     <children>
-                                        <HBox prefHeight="39.0" prefWidth="448.0" spacing="5.0">
+                                        <HBox prefHeight="47.0" prefWidth="309.0" spacing="5.0">
                                             <children>
                                                 <Label prefHeight="51.0" prefWidth="139.0" text="Passing Year :">
                                                     <font>
                                                         <Font size="20.0" />
                                                     </font>
                                                 </Label>
-                                                <TextField prefHeight="86.0" prefWidth="304.0" style="-fx-border-radius: 5; -fx-border-width: 1; -fx-border-color: black;" />
+                                                <TextField prefHeight="47.0" prefWidth="192.0" style="-fx-border-radius: 5; -fx-border-width: 1; -fx-border-color: black;" />
                                             </children>
                                         </HBox>
-                                        <HBox prefHeight="39.0" prefWidth="448.0">
+                                        <HBox prefHeight="47.0" prefWidth="536.0" spacing="5.0">
                                             <children>
-                                                <Label prefHeight="66.0" prefWidth="169.0" text="GPA / CGPA :">
+                                                <Label prefHeight="47.0" prefWidth="127.0" text="GPA / CGPA :">
                                                     <font>
                                                         <Font size="20.0" />
                                                     </font>
                                                 </Label>
-                                                <TextField prefHeight="103.0" prefWidth="323.0" style="-fx-border-radius: 5; -fx-border-width: 1; -fx-border-color: black;" />
+                                                <TextField prefHeight="47.0" prefWidth="211.0" style="-fx-border-radius: 5; -fx-border-width: 1; -fx-border-color: black;" />
+                                    <Button mnemonicParsing="false" prefHeight="47.0" prefWidth="206.0" style="-fx-border-radius: 5; -fx-border-width: 1; -fx-border-color: black; -fx-background-color: #31C950; -fx-font-size: 20; -fx-text-fill: black; -fx-background-radius: 5;" text="Add More">
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font>
+                                    </Button>
                                             </children>
                                         </HBox>
                                     </children>
