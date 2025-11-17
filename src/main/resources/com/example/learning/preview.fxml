@@ -2,6 +2,7 @@
 
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
 <?import javafx.scene.control.Separator?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.ImageView?>
@@ -43,16 +44,16 @@
                      </padding>
                   </Label>
                   <Separator prefWidth="200.0" />
-                  <VBox prefHeight="283.0" prefWidth="143.0">
+                  <VBox fx:id="eduBox" prefHeight="283.0" prefWidth="143.0">
                      <children>
                         <VBox prefHeight="93.0" prefWidth="143.0">
                            <children>
-                              <TextField editable="false" prefHeight="5.0" prefWidth="143.0" style="-fx-background-color: transparent; -fx-border-color: transparent; -fx-focus-color: transparent; -fx-faint-focus-color: transparent;" text="Exam" />
-                              <TextField editable="false" prefHeight="23.0" prefWidth="145.0" style="-fx-background-color: transparent; -fx-border-color: transparent; -fx-focus-color: transparent; -fx-faint-focus-color: transparent;" text="Institute" />
+                              <TextField fx:id="examP" editable="false" prefHeight="5.0" prefWidth="143.0" style="-fx-background-color: transparent; -fx-border-color: transparent; -fx-focus-color: transparent; -fx-faint-focus-color: transparent;" text="Exam" />
+                              <TextField fx:id="instituteP" editable="false" prefHeight="23.0" prefWidth="145.0" style="-fx-background-color: transparent; -fx-border-color: transparent; -fx-focus-color: transparent; -fx-faint-focus-color: transparent;" text="Institute" />
                               <HBox prefHeight="29.0" prefWidth="143.0">
                                  <children>
-                                    <Label prefHeight="31.0" prefWidth="70.0" text="pass" />
-                                    <Label prefHeight="41.0" prefWidth="73.0" text="cg" />
+                                    <Label fx:id="yearP" prefHeight="31.0" prefWidth="70.0" text="pass" />
+                                    <Label fx:id="cgP" prefHeight="41.0" prefWidth="73.0" text="cg" />
                                  </children>
                                  <padding>
                                     <Insets left="8.0" />
@@ -88,7 +89,10 @@
                            </font>
                         </Label>
                         <Separator prefWidth="200.0" />
-                        <VBox prefHeight="186.0" prefWidth="285.0" />
+                        <VBox prefHeight="186.0" prefWidth="285.0">
+                           <children>
+                              <ListView fx:id="skillList" prefHeight="200.0" prefWidth="200.0" />
+                           </children></VBox>
                         <Label prefHeight="29.0" prefWidth="137.0" text="Experiences">
                            <font>
                               <Font name="Roboto Bold" size="23.0" />
@@ -98,7 +102,7 @@
                            </VBox.margin>
                         </Label>
                         <Separator prefWidth="200.0" />
-                        <VBox prefHeight="360.0" prefWidth="285.0">
+                        <VBox fx:id="expBox" prefHeight="360.0" prefWidth="285.0">
                            <children>
                               <VBox prefHeight="51.0" prefWidth="285.0">
                                  <children>
