@@ -111,7 +111,22 @@ public class FormController {
     }
 
     @FXML
+    private TextField project;
+    @FXML
+    private HBox projectBox;
+
+    private final List<String> projectList=new ArrayList<>();
+    @FXML
     private void onAddProjects() {
+        projectList.add(project.getText());
+        Label label = new Label(
+                project.getText()
+        );
+        project.clear();
+        projectBox.getChildren().add(label);
+        Separator separator = new Separator();
+        separator.setOrientation(Orientation.VERTICAL);
+        projectBox.getChildren().add(separator);
 
     }
     @FXML
@@ -136,6 +151,7 @@ public class FormController {
 
         previewController.setEducationList(eduList);
         previewController.setExperienceList(expList);
+        previewController.setSkillList(skillList);
 
         Stage stage = (Stage) previewBtn.getScene().getWindow();
         stage.setScene(scene);
