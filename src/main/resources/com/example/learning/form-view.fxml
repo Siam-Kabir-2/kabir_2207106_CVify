@@ -39,11 +39,11 @@
                         <ColumnConstraints hgrow="SOMETIMES" maxWidth="874.6666666666667" minWidth="0.0" prefWidth="846.6666056315105" />
                     </columnConstraints>
                     <rowConstraints>
-                        <RowConstraints maxHeight="54.33333969116211" minHeight="10.0" prefHeight="26.666670481363923" vgrow="SOMETIMES" />
-                        <RowConstraints maxHeight="89.66666285196939" minHeight="10.0" prefHeight="33.99998474121092" vgrow="SOMETIMES" />
-                        <RowConstraints maxHeight="117.00001525878906" minHeight="10.0" prefHeight="37.00002034505208" vgrow="SOMETIMES" />
-                        <RowConstraints maxHeight="175.6666717529297" minHeight="10.0" prefHeight="38.33331298828125" vgrow="SOMETIMES" />
-                        <RowConstraints maxHeight="291.33332316080725" minHeight="10.0" prefHeight="172.33333333333331" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="54.33333969116211" minHeight="10.0" prefHeight="36.9999516805013" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="89.66666285196939" minHeight="10.0" prefHeight="33.66666666666667" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="117.00001525878906" minHeight="10.0" prefHeight="31.333353678385407" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="175.6666717529297" minHeight="10.0" prefHeight="32.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="291.33332316080725" minHeight="10.0" prefHeight="172.66666666666666" vgrow="SOMETIMES" />
                         <RowConstraints maxHeight="206.66676839192712" minHeight="0.0" prefHeight="99.33333333333331" vgrow="SOMETIMES" />
                         <RowConstraints maxHeight="250.66672770182288" minHeight="0.0" prefHeight="142.66664632161456" vgrow="SOMETIMES" />
                         <RowConstraints maxHeight="255.66666666666669" minHeight="10.0" prefHeight="112.66668701171875" vgrow="SOMETIMES" />
@@ -96,7 +96,7 @@
                             <font>
                                 <Font name="Cambria" size="28.0" />
                             </font></Label>
-                        <TextField fx:id="name" prefHeight="116.0" prefWidth="875.0" style="-fx-border-width: 1 1 1 1; -fx-border-color: #000000; -fx-border-radius: 4;" GridPane.columnIndex="1">
+                        <TextField fx:id="name" prefHeight="53.0" prefWidth="848.0" style="-fx-border-width: 1 1 1 1; -fx-border-color: #000000; -fx-border-radius: 4;" GridPane.columnIndex="1">
                             <opaqueInsets>
                                 <Insets />
                             </opaqueInsets>
@@ -161,7 +161,7 @@
                   </VBox>
                   <VBox prefHeight="200.0" prefWidth="100.0" spacing="10.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
                      <children>
-                        <VBox prefHeight="124.0" prefWidth="854.0" spacing="5.0">
+                        <VBox prefHeight="119.0" prefWidth="848.0" spacing="5.0">
                            <children>
                               <HBox prefHeight="39.0" prefWidth="826.0">
                                  <children>
@@ -173,17 +173,17 @@
                                     <TextField fx:id="exam" prefHeight="63.0" prefWidth="603.0" style="-fx-border-radius: 5; -fx-border-width: 1; -fx-border-color: black;" />
                                  </children>
                               </HBox>
-                              <HBox prefHeight="41.0" prefWidth="826.0">
+                              <HBox prefHeight="72.0" prefWidth="843.0">
                                  <children>
                                     <Label prefHeight="75.0" prefWidth="201.0" text="Institute :">
                                        <font>
                                           <Font size="22.0" />
                                        </font>
                                     </Label>
-                                    <TextField fx:id="institute" prefHeight="41.0" prefWidth="813.0" style="-fx-border-radius: 5; -fx-border-width: 1; -fx-border-color: black;" />
+                                    <TextField fx:id="institute" prefHeight="51.0" prefWidth="727.0" style="-fx-border-radius: 5; -fx-border-width: 1; -fx-border-color: black;" />
                                  </children>
                               </HBox>
-                              <HBox prefHeight="23.0" prefWidth="835.0" spacing="10.0">
+                              <HBox prefHeight="21.0" prefWidth="843.0" spacing="10.0">
                                  <children>
                                     <HBox prefHeight="47.0" prefWidth="309.0" spacing="5.0">
                                        <children>
@@ -192,18 +192,18 @@
                                                 <Font size="20.0" />
                                              </font>
                                           </Label>
-                                          <TextField fx:id="passingYear" prefHeight="46.0" prefWidth="165.0" style="-fx-border-radius: 5; -fx-border-width: 1; -fx-border-color: black;" />
+                                          <TextField fx:id="passingYear" prefHeight="46.0" prefWidth="185.0" style="-fx-border-radius: 5; -fx-border-width: 1; -fx-border-color: black;" />
                                        </children>
                                     </HBox>
-                                    <HBox prefHeight="47.0" prefWidth="536.0" spacing="5.0">
+                                    <HBox prefHeight="46.0" prefWidth="518.0" spacing="5.0">
                                        <children>
                                           <Label prefHeight="47.0" prefWidth="127.0" text="GPA / CGPA :">
                                              <font>
                                                 <Font size="20.0" />
                                              </font>
                                           </Label>
-                                          <TextField fx:id="cg" prefHeight="47.0" prefWidth="188.0" style="-fx-border-radius: 5; -fx-border-width: 1; -fx-border-color: black;" />
-                                          <Button fx:id="addEduQ" mnemonicParsing="false" onAction="#onAddEduQ" prefHeight="47.0" prefWidth="206.0" style="-fx-border-radius: 5; -fx-border-width: 1; -fx-border-color: black; -fx-background-color: #31C950; -fx-font-size: 20; -fx-text-fill: black; -fx-background-radius: 5;" text="Add More">
+                                          <TextField fx:id="cg" prefHeight="46.0" prefWidth="317.0" style="-fx-border-radius: 5; -fx-border-width: 1; -fx-border-color: black;" />
+                                          <Button fx:id="addEduQ" mnemonicParsing="false" onAction="#onAddEduQ" prefHeight="46.0" prefWidth="63.0" style="-fx-border-radius: 5; -fx-border-width: 1; -fx-border-color: black; -fx-background-color: #31C950; -fx-font-size: 20; -fx-text-fill: black; -fx-background-radius: 5;" text="+">
                                              <font>
                                                 <Font size="13.0" />
                                              </font>

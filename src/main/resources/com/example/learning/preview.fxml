@@ -2,7 +2,6 @@
 
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.ListView?>
 <?import javafx.scene.control.Separator?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.ImageView?>
@@ -89,10 +88,7 @@
                            </font>
                         </Label>
                         <Separator prefWidth="200.0" />
-                        <VBox prefHeight="123.0" prefWidth="257.0">
-                           <children>
-                              <ListView fx:id="skillBox" prefHeight="124.0" prefWidth="257.0" />
-                           </children></VBox>
+                        <VBox fx:id="skillBox" prefHeight="123.0" prefWidth="257.0" />
                         <Label prefHeight="29.0" prefWidth="137.0" text="Experiences">
                            <font>
                               <Font name="Roboto Bold" size="23.0" />
@@ -131,7 +127,7 @@
                            </font>
                         </Label>
                         <Separator prefWidth="200.0" />
-                        <ListView fx:id="projectBox" prefHeight="97.0" prefWidth="257.0" />
+                        <VBox fx:id="projectBox" prefHeight="143.0" prefWidth="257.0" />
                      </children>
                   </VBox>
                </children>

@@ -152,7 +152,7 @@ public class FormController {
         previewController.setEducationList(eduList);
         previewController.setExperienceList(expList);
         previewController.setSkillList(skillList);
-
+        previewController.setProjectList(projectList);
         Stage stage = (Stage) previewBtn.getScene().getWindow();
         stage.setScene(scene);
         stage.show();

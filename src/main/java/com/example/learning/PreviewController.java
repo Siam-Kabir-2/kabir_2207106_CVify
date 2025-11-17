@@ -52,7 +52,8 @@ public class PreviewController {
         }
     }
 
-    @FXML VBox expBox;
+    @FXML
+    private VBox expBox;
     public void setExperienceList(List<WorkExperience> list) {
         expBox.getChildren().clear();
 
@@ -65,6 +66,30 @@ public class PreviewController {
 
             expBox.getChildren().add(entry);
         }
+    }
+
+    @FXML
+    private VBox skillBox;
+    public void setSkillList(List<String> list) {
+        skillBox.getChildren().clear();
+
+        for (String skill : list) {
+            skillBox.getChildren().add(new Label(skill));
+
+        }
+        skillBox.getChildren().add(new Separator());
+    }
+
+    @FXML
+    private VBox projectBox;
+    public void setProjectList(List<String> list) {
+        projectBox.getChildren().clear();
+
+        for (String project : list) {
+            projectBox.getChildren().add(new Label(project));
+
+        }
+        projectBox.getChildren().add(new Separator());
     }
 
 
