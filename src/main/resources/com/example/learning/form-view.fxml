@@ -15,11 +15,11 @@
 
 <BorderPane maxHeight="1.7976931348623157E308" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="651.0" prefWidth="1284.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.learning.FormController">
     <top>
-        <VBox alignment="CENTER" prefHeight="93.0" prefWidth="1284.0" BorderPane.alignment="CENTER">
+        <VBox alignment="CENTER" prefHeight="75.0" prefWidth="1284.0" BorderPane.alignment="CENTER">
             <children>
                 <Label alignment="CENTER" prefHeight="47.0" prefWidth="229.0" text="CVify">
                     <font>
-                        <Font name="Century Schoolbook Bold" size="53.0" />
+                        <Font name="Century Schoolbook Bold" size="51.0" />
                     </font>
                 </Label>
                 <Label alignment="CENTER" prefHeight="11.0" prefWidth="119.0" text="Build Your CV">
@@ -43,8 +43,9 @@
                         <RowConstraints maxHeight="89.66666285196939" minHeight="10.0" prefHeight="33.66666666666667" vgrow="SOMETIMES" />
                         <RowConstraints maxHeight="117.00001525878906" minHeight="10.0" prefHeight="31.333353678385407" vgrow="SOMETIMES" />
                         <RowConstraints maxHeight="175.6666717529297" minHeight="10.0" prefHeight="32.0" vgrow="SOMETIMES" />
-                        <RowConstraints maxHeight="291.33332316080725" minHeight="10.0" prefHeight="172.66666666666666" vgrow="SOMETIMES" />
-                        <RowConstraints maxHeight="206.66676839192712" minHeight="0.0" prefHeight="99.33333333333331" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="175.6666717529297" minHeight="10.0" prefHeight="29.999979654947907" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="291.33332316080725" minHeight="10.0" prefHeight="164.66668701171875" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="206.66676839192712" minHeight="0.0" prefHeight="79.99995930989581" vgrow="SOMETIMES" />
                         <RowConstraints maxHeight="250.66672770182288" minHeight="0.0" prefHeight="142.66664632161456" vgrow="SOMETIMES" />
                         <RowConstraints maxHeight="255.66666666666669" minHeight="10.0" prefHeight="112.66668701171875" vgrow="SOMETIMES" />
                     </rowConstraints>
@@ -80,19 +81,19 @@
                             <font>
                                 <Font name="Cambria" size="28.0" />
                             </font></Label>
-                        <Label prefHeight="110.0" prefWidth="407.0" text="Educational Qualifications" wrapText="true" GridPane.rowIndex="4">
+                        <Label prefHeight="110.0" prefWidth="407.0" text="Educational Qualifications" wrapText="true" GridPane.rowIndex="5">
                             <font>
                                 <Font name="Cambria" size="28.0" />
                             </font></Label>
-                        <Label prefHeight="109.0" prefWidth="399.0" text="Skills" GridPane.rowIndex="5">
+                        <Label prefHeight="109.0" prefWidth="399.0" text="Skills" GridPane.rowIndex="6">
                             <font>
                                 <Font name="Cambria" size="28.0" />
                             </font></Label>
-                        <Label prefHeight="118.0" prefWidth="437.0" text="Work Experience" GridPane.rowIndex="6">
+                        <Label prefHeight="118.0" prefWidth="437.0" text="Work Experience" GridPane.rowIndex="7">
                             <font>
                                 <Font name="Cambria" size="28.0" />
                             </font></Label>
-                        <Label prefHeight="102.0" prefWidth="445.0" text="Projects" GridPane.rowIndex="7">
+                        <Label prefHeight="102.0" prefWidth="445.0" text="Projects" GridPane.rowIndex="8">
                             <font>
                                 <Font name="Cambria" size="28.0" />
                             </font></Label>
@@ -101,7 +102,7 @@
                                 <Insets />
                             </opaqueInsets>
                         </TextField>
-                  <VBox prefHeight="200.0" prefWidth="100.0" spacing="10.0" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                  <VBox prefHeight="200.0" prefWidth="100.0" spacing="10.0" GridPane.columnIndex="1" GridPane.rowIndex="6">
                      <children>
                         <GridPane hgap="5.0" prefHeight="42.0" prefWidth="797.0" vgap="5.0">
                            <columnConstraints>
@@ -130,7 +131,7 @@
                         </ScrollPane>
                      </children>
                   </VBox>
-                  <VBox prefHeight="200.0" prefWidth="100.0" spacing="10.0" GridPane.columnIndex="1" GridPane.rowIndex="7">
+                  <VBox prefHeight="200.0" prefWidth="100.0" spacing="10.0" GridPane.columnIndex="1" GridPane.rowIndex="8">
                      <children>
                         <GridPane hgap="5.0" prefHeight="50.0" prefWidth="854.0" vgap="5.0">
                            <columnConstraints>
@@ -159,7 +160,7 @@
                         </ScrollPane>
                      </children>
                   </VBox>
-                  <VBox prefHeight="200.0" prefWidth="100.0" spacing="10.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                  <VBox prefHeight="200.0" prefWidth="100.0" spacing="10.0" GridPane.columnIndex="1" GridPane.rowIndex="5">
                      <children>
                         <VBox prefHeight="119.0" prefWidth="848.0" spacing="5.0">
                            <children>
@@ -224,7 +225,7 @@
                         </ScrollPane>
                      </children>
                   </VBox>
-                  <VBox prefHeight="200.0" prefWidth="100.0" spacing="10.0" GridPane.columnIndex="1" GridPane.rowIndex="6">
+                  <VBox prefHeight="200.0" prefWidth="100.0" spacing="10.0" GridPane.columnIndex="1" GridPane.rowIndex="7">
                      <children>
                         <VBox prefHeight="95.0" prefWidth="854.0" spacing="5.0">
                            <children>
@@ -279,6 +280,16 @@
                         </ScrollPane>
                      </children>
                   </VBox>
+                  <Label prefHeight="153.0" prefWidth="472.0" text="Photo" GridPane.rowIndex="4">
+                     <font>
+                        <Font name="Cambria Math" size="28.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="image" mnemonicParsing="false" onAction="#onImageUpload" prefHeight="7.0" prefWidth="848.0" text="Upload Image" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Button>
 
                     </children>
                     <BorderPane.margin>

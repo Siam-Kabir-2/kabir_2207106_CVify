@@ -5,6 +5,8 @@ import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
 import javafx.scene.control.Separator;
 import javafx.scene.control.TextField;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 
@@ -92,6 +94,11 @@ public class PreviewController {
         projectBox.getChildren().add(new Separator());
     }
 
+    @FXML
+    private ImageView imageBox;
+    public void setProfileImage(Image img) {
+        imageBox.setImage(img);
+    }
 
 
 

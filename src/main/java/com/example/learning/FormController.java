@@ -8,9 +8,13 @@ import javafx.scene.control.Separator;
 import javafx.scene.control.TextField;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
+import javafx.stage.FileChooser;
 import javafx.stage.Stage;
+
+import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
@@ -129,6 +133,24 @@ public class FormController {
         projectBox.getChildren().add(separator);
 
     }
+
+    private Image uploadedImage;
+    @FXML
+    private Button image;
+    @FXML
+    private void onImageUpload() {
+        FileChooser fileChooser = new FileChooser();
+        fileChooser.setTitle("Select Image");
+        fileChooser.getExtensionFilters().add(
+                new FileChooser.ExtensionFilter("Image Files", "*.png", "*.jpg", "*.jpeg")
+        );
+        File file = fileChooser.showOpenDialog(image.getScene().getWindow());
+        if (file != null) {
+            Image img = new Image(file.toURI().toString());
+            uploadedImage = img;
+            image.setText("Uploaded");
+        }
+    }
     @FXML
     private void onSubmitBtn() {
 
@@ -153,6 +175,11 @@ public class FormController {
         previewController.setExperienceList(expList);
         previewController.setSkillList(skillList);
         previewController.setProjectList(projectList);
+
+        if (uploadedImage != null) {
+            previewController.setProfileImage(uploadedImage);
+        }
+
         Stage stage = (Stage) previewBtn.getScene().getWindow();
         stage.setScene(scene);
         stage.show();
