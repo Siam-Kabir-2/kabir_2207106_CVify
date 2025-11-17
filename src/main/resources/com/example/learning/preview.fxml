@@ -10,8 +10,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-
-<HBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="646.0" prefWidth="649.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1">
+<HBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="646.0" prefWidth="649.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.learning.PreviewController">
    <children>
       <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="603.0" prefWidth="452.0" style="-fx-border-width: 1; -fx-border-color: black;">
          <left>
@@ -21,11 +20,11 @@
                   <VBox prefHeight="87.0" prefWidth="143.0">
                      <children>
                         <Separator prefWidth="200.0" />
-                        <Label prefHeight="31.0" prefWidth="143.0" text="Address" />
+                        <Label fx:id="addressP" prefHeight="31.0" prefWidth="143.0" text="Address" />
                         <Separator prefWidth="200.0" />
-                        <Label prefHeight="31.0" prefWidth="143.0" text="Phone" />
+                        <Label fx:id="phoneP" prefHeight="31.0" prefWidth="143.0" text="Phone" />
                         <Separator prefWidth="200.0" />
-                        <Label prefHeight="31.0" prefWidth="143.0" text="Email" />
+                        <Label fx:id="emailP" prefHeight="31.0" prefWidth="143.0" text="Email" />
                      </children>
                      <padding>
                         <Insets left="8.0" />
@@ -70,7 +69,7 @@
          <center>
             <VBox prefHeight="506.0" prefWidth="236.0" BorderPane.alignment="CENTER">
                <children>
-                  <Label prefHeight="40.0" prefWidth="305.0" style="-fx-background-color: #C71D36;" text="Full Name" textFill="WHITE">
+                  <Label fx:id="nameP" prefHeight="40.0" prefWidth="305.0" style="-fx-background-color: #C71D36;" text="Full Name" textFill="WHITE">
                      <font>
                         <Font name="Roboto Bold" size="25.0" />
                      </font>
