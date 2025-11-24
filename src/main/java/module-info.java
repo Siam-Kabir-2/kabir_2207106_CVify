@@ -10,6 +10,8 @@ module com.example.learning {
     requires org.kordamp.bootstrapfx.core;
     requires eu.hansolo.tilesfx;
     requires javafx.graphics;
+    requires java.sql;
+    requires org.json;
 
     opens com.example.learning to javafx.fxml;
     exports com.example.learning;

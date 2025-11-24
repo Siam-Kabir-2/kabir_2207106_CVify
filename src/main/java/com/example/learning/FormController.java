@@ -151,10 +151,6 @@ public class FormController {
             image.setText("Uploaded");
         }
     }
-    @FXML
-    private void onSubmitBtn() {
-
-    }
 
     @FXML
     private Button previewBtn;

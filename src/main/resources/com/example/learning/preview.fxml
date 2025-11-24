@@ -24,7 +24,10 @@
                         <Separator prefWidth="200.0" />
                         <Label fx:id="phoneP" prefHeight="31.0" prefWidth="143.0" text="Phone" />
                         <Separator prefWidth="200.0" />
-                        <Label fx:id="emailP" prefHeight="31.0" prefWidth="143.0" text="Email" />
+                        <Label fx:id="emailP" prefHeight="31.0" prefWidth="143.0" text="Email">
+                           <font>
+                              <Font name="System Italic" size="12.0" />
+                           </font></Label>
                      </children>
                      <padding>
                         <Insets left="8.0" />
@@ -36,7 +39,7 @@
                         <Insets top="20.0" />
                      </VBox.margin>
                      <font>
-                        <Font name="Roboto Bold" size="24.0" />
+                        <Font name="Calibri Bold" size="22.0" />
                      </font>
                      <padding>
                         <Insets left="8.0" />
@@ -72,9 +75,9 @@
          <center>
             <VBox prefHeight="506.0" prefWidth="236.0" BorderPane.alignment="CENTER">
                <children>
-                  <Label fx:id="nameP" prefHeight="40.0" prefWidth="305.0" style="-fx-background-color: #C71D36;" text="Full Name" textFill="WHITE">
+                  <Label fx:id="nameP" prefHeight="53.0" prefWidth="277.0" style="-fx-background-color: #C71D36;" text="Full Name" textFill="WHITE">
                      <font>
-                        <Font name="Roboto Bold" size="25.0" />
+                        <Font name="Calibri Bold" size="27.0" />
                      </font>
                      <padding>
                         <Insets left="10.0" />
@@ -87,14 +90,14 @@
                      <children>
                         <Label prefHeight="17.0" prefWidth="107.0" text="Skills">
                            <font>
-                              <Font name="Roboto Bold" size="23.0" />
+                              <Font name="Calibri Bold" size="22.0" />
                            </font>
                         </Label>
                         <Separator prefWidth="200.0" />
                         <VBox fx:id="skillBox" prefHeight="123.0" prefWidth="257.0" />
                         <Label prefHeight="29.0" prefWidth="137.0" text="Experiences">
                            <font>
-                              <Font name="Roboto Bold" size="23.0" />
+                              <Font name="Calibri Bold" size="24.0" />
                            </font>
                            <VBox.margin>
                               <Insets top="20.0" />
@@ -126,7 +129,7 @@
                         </VBox>
                         <Label prefHeight="29.0" prefWidth="137.0" text="Projects">
                            <font>
-                              <Font name="Roboto Bold" size="23.0" />
+                              <Font name="Calibri Bold" size="24.0" />
                            </font>
                         </Label>
                         <Separator prefWidth="200.0" />
