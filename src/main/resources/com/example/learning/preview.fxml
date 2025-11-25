@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.Separator?>
 <?import javafx.scene.control.TextField?>
@@ -10,141 +11,146 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<HBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="646.0" prefWidth="649.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.learning.PreviewController">
-   <children>
-      <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="603.0" prefWidth="452.0" style="-fx-border-width: 1; -fx-border-color: black;">
-         <left>
-            <VBox prefHeight="592.0" prefWidth="143.0" BorderPane.alignment="CENTER">
-               <children>
-                  <ImageView fx:id="imageBox" fitHeight="139.0" fitWidth="143.0" pickOnBounds="true" preserveRatio="true" />
-                  <VBox prefHeight="87.0" prefWidth="143.0">
-                     <children>
-                        <Separator prefWidth="200.0" />
-                        <Label fx:id="addressP" prefHeight="31.0" prefWidth="143.0" text="Address" />
-                        <Separator prefWidth="200.0" />
-                        <Label fx:id="phoneP" prefHeight="31.0" prefWidth="143.0" text="Phone" />
-                        <Separator prefWidth="200.0" />
-                        <Label fx:id="emailP" prefHeight="31.0" prefWidth="143.0" text="Email">
-                           <font>
-                              <Font name="System Italic" size="12.0" />
-                           </font></Label>
-                     </children>
-                     <padding>
-                        <Insets left="8.0" />
-                     </padding>
-                  </VBox>
-                  <Separator prefWidth="200.0" />
-                  <Label prefHeight="35.0" prefWidth="154.0" text="Education">
-                     <VBox.margin>
-                        <Insets top="20.0" />
-                     </VBox.margin>
-                     <font>
-                        <Font name="Calibri Bold" size="22.0" />
-                     </font>
-                     <padding>
-                        <Insets left="8.0" />
-                     </padding>
-                  </Label>
-                  <Separator prefWidth="200.0" />
-                  <VBox fx:id="eduBox" prefHeight="283.0" prefWidth="143.0">
-                     <children>
-                        <VBox prefHeight="93.0" prefWidth="143.0">
-                           <children>
-                              <TextField fx:id="examP" editable="false" prefHeight="5.0" prefWidth="143.0" style="-fx-background-color: transparent; -fx-border-color: transparent; -fx-focus-color: transparent; -fx-faint-focus-color: transparent;" text="Exam" />
-                              <TextField fx:id="instituteP" editable="false" prefHeight="23.0" prefWidth="145.0" style="-fx-background-color: transparent; -fx-border-color: transparent; -fx-focus-color: transparent; -fx-faint-focus-color: transparent;" text="Institute" />
-                              <HBox prefHeight="29.0" prefWidth="143.0">
-                                 <children>
-                                    <Label fx:id="yearP" prefHeight="31.0" prefWidth="70.0" text="pass" />
-                                    <Label fx:id="cgP" prefHeight="41.0" prefWidth="73.0" text="cg" />
-                                 </children>
-                                 <padding>
-                                    <Insets left="8.0" />
-                                 </padding>
-                              </HBox>
-                              <Separator prefHeight="33.0" prefWidth="143.0" />
-                           </children>
+<HBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="646.0" prefWidth="657.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.learning.PreviewController">
+    <children>
+      <Button fx:id="homeBtn" mnemonicParsing="false" onAction="#redirectHome" text="Home">
+         <HBox.margin>
+            <Insets right="20.0" />
+         </HBox.margin>
+      </Button>
+        <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="603.0" prefWidth="452.0" style="-fx-border-width: 1; -fx-border-color: black;">
+            <left>
+                <VBox prefHeight="592.0" prefWidth="143.0" BorderPane.alignment="CENTER">
+                    <children>
+                        <ImageView fx:id="imageBox" fitHeight="139.0" fitWidth="143.0" pickOnBounds="true" preserveRatio="true" />
+                        <VBox prefHeight="87.0" prefWidth="143.0">
+                            <children>
+                                <Separator prefWidth="200.0" />
+                                <Label fx:id="addressP" prefHeight="31.0" prefWidth="143.0" text="Address" />
+                                <Separator prefWidth="200.0" />
+                                <Label fx:id="phoneP" prefHeight="31.0" prefWidth="143.0" text="Phone" />
+                                <Separator prefWidth="200.0" />
+                                <Label fx:id="emailP" prefHeight="31.0" prefWidth="143.0" text="Email">
+                                    <font>
+                                        <Font name="System Italic" size="12.0" />
+                                    </font></Label>
+                            </children>
+                            <padding>
+                                <Insets left="8.0" />
+                            </padding>
                         </VBox>
-                     </children>
-                     <padding>
-                        <Insets left="10.0" />
-                     </padding>
-                  </VBox>
-               </children>
-            </VBox>
-         </left>
-         <center>
-            <VBox prefHeight="506.0" prefWidth="236.0" BorderPane.alignment="CENTER">
-               <children>
-                  <Label fx:id="nameP" prefHeight="53.0" prefWidth="277.0" style="-fx-background-color: #C71D36;" text="Full Name" textFill="WHITE">
-                     <font>
-                        <Font name="Calibri Bold" size="27.0" />
-                     </font>
-                     <padding>
-                        <Insets left="10.0" />
-                     </padding>
-                  </Label>
-                  <VBox prefHeight="539.0" prefWidth="305.0">
-                     <padding>
-                        <Insets left="20.0" top="20.0" />
-                     </padding>
-                     <children>
-                        <Label prefHeight="17.0" prefWidth="107.0" text="Skills">
-                           <font>
-                              <Font name="Calibri Bold" size="22.0" />
-                           </font>
+                        <Separator prefWidth="200.0" />
+                        <Label prefHeight="35.0" prefWidth="154.0" text="Education">
+                            <VBox.margin>
+                                <Insets top="20.0" />
+                            </VBox.margin>
+                            <font>
+                                <Font name="Calibri Bold" size="22.0" />
+                            </font>
+                            <padding>
+                                <Insets left="8.0" />
+                            </padding>
                         </Label>
                         <Separator prefWidth="200.0" />
-                        <VBox fx:id="skillBox" prefHeight="123.0" prefWidth="257.0" />
-                        <Label prefHeight="29.0" prefWidth="137.0" text="Experiences">
-                           <font>
-                              <Font name="Calibri Bold" size="24.0" />
-                           </font>
-                           <VBox.margin>
-                              <Insets top="20.0" />
-                           </VBox.margin>
-                        </Label>
-                        <Separator prefWidth="200.0" />
-                        <VBox fx:id="expBox" prefHeight="156.0" prefWidth="257.0">
-                           <children>
-                              <VBox prefHeight="51.0" prefWidth="285.0">
-                                 <children>
-                                    <Label prefHeight="28.0" prefWidth="285.0" text="Position">
-                                       <font>
-                                          <Font name="SansSerif Bold" size="16.0" />
-                                       </font>
-                                    </Label>
-                                    <HBox prefHeight="30.0" prefWidth="285.0">
-                                       <children>
-                                          <Label prefHeight="27.0" prefWidth="143.0" text="Company" />
-                                          <Separator orientation="VERTICAL" prefHeight="200.0" />
-                                          <Label prefHeight="96.0" prefWidth="141.0" text="Duration" />
-                                       </children>
-                                    </HBox>
-                                 </children>
-                                 <VBox.margin>
-                                    <Insets top="10.0" />
-                                 </VBox.margin>
-                              </VBox>
-                           </children>
+                        <VBox fx:id="eduBox" prefHeight="283.0" prefWidth="143.0">
+                            <children>
+                                <VBox prefHeight="93.0" prefWidth="143.0">
+                                    <children>
+                                        <TextField fx:id="examP" editable="false" prefHeight="5.0" prefWidth="143.0" style="-fx-background-color: transparent; -fx-border-color: transparent; -fx-focus-color: transparent; -fx-faint-focus-color: transparent;" text="Exam" />
+                                        <TextField fx:id="instituteP" editable="false" prefHeight="23.0" prefWidth="145.0" style="-fx-background-color: transparent; -fx-border-color: transparent; -fx-focus-color: transparent; -fx-faint-focus-color: transparent;" text="Institute" />
+                                        <HBox prefHeight="29.0" prefWidth="143.0">
+                                            <children>
+                                                <Label fx:id="yearP" prefHeight="31.0" prefWidth="70.0" text="pass" />
+                                                <Label fx:id="cgP" prefHeight="41.0" prefWidth="73.0" text="cg" />
+                                            </children>
+                                            <padding>
+                                                <Insets left="8.0" />
+                                            </padding>
+                                        </HBox>
+                                        <Separator prefHeight="33.0" prefWidth="143.0" />
+                                    </children>
+                                </VBox>
+                            </children>
+                            <padding>
+                                <Insets left="10.0" />
+                            </padding>
                         </VBox>
-                        <Label prefHeight="29.0" prefWidth="137.0" text="Projects">
-                           <font>
-                              <Font name="Calibri Bold" size="24.0" />
-                           </font>
+                    </children>
+                </VBox>
+            </left>
+            <center>
+                <VBox prefHeight="506.0" prefWidth="236.0" BorderPane.alignment="CENTER">
+                    <children>
+                        <Label fx:id="nameP" prefHeight="53.0" prefWidth="277.0" style="-fx-background-color: #C71D36;" text="Full Name" textFill="WHITE">
+                            <font>
+                                <Font name="Calibri Bold" size="27.0" />
+                            </font>
+                            <padding>
+                                <Insets left="10.0" />
+                            </padding>
                         </Label>
-                        <Separator prefWidth="200.0" />
-                        <VBox fx:id="projectBox" prefHeight="143.0" prefWidth="257.0" />
-                     </children>
-                  </VBox>
-               </children>
-            </VBox>
-         </center>
-         <padding>
-            <Insets left="30.0" top="25.0" />
-         </padding>
-      </BorderPane>
-   </children>
-   <padding>
-      <Insets top="20.0" />
-   </padding>
+                        <VBox prefHeight="539.0" prefWidth="305.0">
+                            <padding>
+                                <Insets left="20.0" top="20.0" />
+                            </padding>
+                            <children>
+                                <Label prefHeight="17.0" prefWidth="107.0" text="Skills">
+                                    <font>
+                                        <Font name="Calibri Bold" size="22.0" />
+                                    </font>
+                                </Label>
+                                <Separator prefWidth="200.0" />
+                                <VBox fx:id="skillBox" prefHeight="123.0" prefWidth="257.0" />
+                                <Label prefHeight="29.0" prefWidth="137.0" text="Experiences">
+                                    <font>
+                                        <Font name="Calibri Bold" size="24.0" />
+                                    </font>
+                                    <VBox.margin>
+                                        <Insets top="20.0" />
+                                    </VBox.margin>
+                                </Label>
+                                <Separator prefWidth="200.0" />
+                                <VBox fx:id="expBox" prefHeight="156.0" prefWidth="257.0">
+                                    <children>
+                                        <VBox prefHeight="51.0" prefWidth="285.0">
+                                            <children>
+                                                <Label prefHeight="28.0" prefWidth="285.0" text="Position">
+                                                    <font>
+                                                        <Font name="SansSerif Bold" size="16.0" />
+                                                    </font>
+                                                </Label>
+                                                <HBox prefHeight="30.0" prefWidth="285.0">
+                                                    <children>
+                                                        <Label prefHeight="27.0" prefWidth="143.0" text="Company" />
+                                                        <Separator orientation="VERTICAL" prefHeight="200.0" />
+                                                        <Label prefHeight="96.0" prefWidth="141.0" text="Duration" />
+                                                    </children>
+                                                </HBox>
+                                            </children>
+                                            <VBox.margin>
+                                                <Insets top="10.0" />
+                                            </VBox.margin>
+                                        </VBox>
+                                    </children>
+                                </VBox>
+                                <Label prefHeight="29.0" prefWidth="137.0" text="Projects">
+                                    <font>
+                                        <Font name="Calibri Bold" size="24.0" />
+                                    </font>
+                                </Label>
+                                <Separator prefWidth="200.0" />
+                                <VBox fx:id="projectBox" prefHeight="143.0" prefWidth="257.0" />
+                            </children>
+                        </VBox>
+                    </children>
+                </VBox>
+            </center>
+            <padding>
+                <Insets left="30.0" top="25.0" />
+            </padding>
+        </BorderPane>
+    </children>
+    <padding>
+        <Insets top="20.0" />
+    </padding>
 </HBox>

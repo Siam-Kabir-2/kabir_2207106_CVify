@@ -1,15 +1,16 @@
 package com.example.learning;
 
 import javafx.fxml.FXML;
-import javafx.scene.control.Label;
-import javafx.scene.control.ListView;
-import javafx.scene.control.Separator;
-import javafx.scene.control.TextField;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
+import javafx.scene.control.*;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
+import javafx.stage.Stage;
 
+import java.io.IOException;
 import java.util.List;
 
 public class PreviewController {
@@ -98,6 +99,17 @@ public class PreviewController {
     private ImageView imageBox;
     public void setProfileImage(Image img) {
         imageBox.setImage(img);
+    }
+
+    @FXML
+    private Button homeBtn;
+    public void redirectHome() throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("hello-view.fxml"));
+        Scene scene = new Scene(loader.load());
+
+        Stage stage = (Stage) homeBtn.getScene().getWindow();
+        stage.setScene(scene);
+        stage.show();
     }
 
 

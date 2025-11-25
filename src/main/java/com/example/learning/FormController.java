@@ -342,4 +342,15 @@ public class FormController {
         alert.setContentText(content);
         alert.showAndWait();
     }
+
+    @FXML
+    private Button backBtn;
+    public void onBackBtn() throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("hello-view.fxml"));
+        Scene scene = new Scene(loader.load());
+
+        Stage stage = (Stage) backBtn.getScene().getWindow();
+        stage.setScene(scene);
+        stage.show();
+    }
 }
